@@ -51,21 +51,49 @@ div.flex-container{
 }
 
 div.little-planet{
-    padding-top: 40px;
+    padding-top: 2%;
     width: 5%;
     align-items: center;
 }
 
 div.coordinates{
-    padding-top: 40px;
-    margin-left: 10px;
-    font-size: 25px;
+    padding-top: 2%;
+    margin-left: 1vw;
+    font-size: 2vw;
+    align-items: center;
+}
+
+div.flex-container-light{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+
+div.little-planet-light{
+    padding-top: 2%;
+    width: 5%;
+    align-items: center;
+}
+
+div.coordinates-light{
+    padding-top: 2%;
+    margin-left: 1vw;
+    font-size: 2vw;
     align-items: center;
 }
 
 div.top-line{
-    height:30px;
+    height:4vh;
     background-color: rgb(22, 70, 205);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.top-line-light{
+    height:4vh;
+    background-color: white;
     margin-left: auto;
     margin-right: auto;
 }
@@ -74,22 +102,23 @@ div.top-line{
 
 div.title{
     font-family: 'Fresh Mango';
-    font-size: 120px;
-    line-height: 120px;
+    font-size: 9vw;
+    line-height: 7vw;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 4vh;
     }
 
 div.jamesbridle{
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
-    font-size: 40px;
+    font-size: 2.5vw;
     line-height: 40px;
     background-color: white;
     border: 3.5px solid rgb(219, 44, 44);
     text-align: center;
-    padding: 30px;
+    color: rgb(12, 49, 151);
+    padding: 1vw;
     border-radius: 100%;
 }
 
@@ -151,8 +180,213 @@ div.width-20{
 
 /*video*/
 div.herovideo {
-    width:400px;
+    width: 300px;
     position: fixed;
     bottom:20px;
     right: 20px;
 }
+
+/*welcome page*/
+div.welcome {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(dark-backdrop-wp.png);
+  background-size:contain ;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+div.welcome.visible {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* triggers and effects*/
+ 
+body.dark{
+    background-image: url(dark-backdrop.png);
+    color: white;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.463);
+ }
+
+body.blank{
+    background-image: url(blank-backdrop.png);
+}
+/*popups*/
+
+div.hide{
+display: none;
+}
+
+div.popup-fomo{
+    position: fixed;
+    width: 50%;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+div.popup-bartop{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+   
+}
+
+div.popup-goodsum{
+    position: fixed;
+    width: 50%;
+    padding: 50%;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(255, 255, 255, 0.852);
+
+}
+
+div.neural-networks-topl{
+    position: fixed;
+    width: 25%;
+    top: 0;
+    left: 0;
+}
+
+div.neural-networks-topr{
+    position: fixed;
+    width: 25%;
+    top: 0;
+    right: 0;
+}
+
+div.neural-networks-bottoml{
+    position: fixed;
+    width: 25%;
+    bottom: 0;
+    left: 0;
+}
+
+div.neural-networks-bottomr{
+    position: fixed;
+    width: 25%;
+    bottom: 0;
+    right: 0;
+}
+
+div.cat-1{
+    position: fixed;
+    width: 15%;
+    top: 0;
+    left: 0;
+}
+
+div.cat-2{
+    position: fixed;
+    height: 15%;
+    top: 20%;
+    left: 30%;
+}
+
+div.cat-3{
+    position: fixed;
+    width: 10%;
+    bottom: 35%;
+    right: 0; 
+}
+
+div.dog-1{
+    position: fixed;
+    width: 15%;
+    bottom: 5%;
+    right: 40%; 
+}
+
+div.dog-2{
+    position: fixed;
+    width: 15%;
+    top: 5%;
+    right: 30%; 
+}
+
+div.dog-3{
+    position: fixed;
+    width: 15%;
+    bottom: 10%;
+    left: 10%; 
+}
+
+div.popup-drunk{
+    position: fixed;
+    width: 50%;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+
+div.empty-side{
+    position: fixed;
+    width: 40%;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+div.letter-network{
+    position: fixed;
+    width: 90%;
+}
+
+div.letter-network-text{
+    position: fixed;
+    width: 40%;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+div.network-arrows{
+    position: fixed;
+    width: 92%;
+    top: 2%;
+    left: 2%
+}
+
+div.network-arrows-text{
+    position: fixed;
+    width: 50%;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+div.neural-network-text{
+    position: fixed;
+    width: 30%;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+div.cartoon-houses-and-sat{
+    position: fixed;
+    width: 75%;
+    top:70%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+div.cartoon-houses-and-sat-text{
+    position: fixed;
+    width: 40%;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
