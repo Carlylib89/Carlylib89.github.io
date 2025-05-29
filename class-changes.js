@@ -76,5 +76,7 @@ const classChanges = [
   { time: 304, target: ".top-line-light", add: "hide" },
   { time: 271, target: ".top-line", add: "hide" },
   { time: 304, target: ".top-line", remove: "hide" },
+  { time: 271, target: ".shadow-sites-text", remove: "hide" },
+  { time: 304, target: ".shadow-sites-text", add: "hide" },
 
 ];
