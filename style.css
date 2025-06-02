@@ -14,6 +14,10 @@ body{
 
 }
 
+* {
+    transition: 1s;
+}
+
 img, video {
     width: 100%;
     display: block;
@@ -84,6 +88,27 @@ div.coordinates-light{
     align-items: center;
 }
 
+div.flex-container-green{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+
+div.little-planet-green{
+    padding-top: 2%;
+    width: 5%;
+    align-items: center;
+}
+
+div.coordinates-green{
+    padding-top: 2%;
+    margin-left: 1vw;
+    font-size: 2vw;
+    align-items: center;
+}
+
 div.top-line{
     height:4vh;
     background-color: rgb(22, 70, 205);
@@ -98,6 +123,19 @@ div.top-line-light{
     margin-right: auto;
 }
 
+div.top-line-green{
+    height:4vh;
+    background-color: rgb(128, 255, 0);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.top-line-yellow{
+    height: 4vh;
+    background-color: rgb(255, 255, 87);
+    margin-left: auto;
+    margin-right: auto;
+}
 /* text settings for different parts */
 
 div.title{
@@ -122,6 +160,34 @@ div.jamesbridle{
     border-radius: 100%;
 }
 
+div.jamesbridle-green{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2.5vw;
+    line-height: 40px;
+    background-color: rgb(14, 2, 54);
+    border: 3.5px solid rgb(128, 255, 0);
+    text-align: center;
+    color: rgb(128, 255, 0);
+    padding: 1vw;
+    border-radius: 100%;
+}
+
+div.jamesbridle-yellow{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2.5vw;
+    line-height: 40px;
+    background-color: rgb(21, 5, 75);
+    border: 3.5px solid rgb(255, 255, 87);
+    text-align: center;
+    color: rgb(255, 255, 87);
+    padding: 1vw;
+    border-radius: 100%;
+}
+
 div.anna{
     text-align: left;
     width: 900px;
@@ -137,6 +203,7 @@ div.george{
     margin-left: auto;
     border-right: 4px solid rgb(12, 49, 151);
     padding-right: 10px;
+    z-index: 1000;
 
 }
 
@@ -218,10 +285,48 @@ body.dark{
 body.blank{
     background-image: url(blank-backdrop.png);
 }
+
+body.hacker{
+    background-image: url(backdrop-green.png);
+    color: rgb(128, 255, 0);
+}
+
+body.sar{
+    background-image: url(backdrop-sar.png);
+    color: rgb(255, 255, 87);
+    text-shadow: 2px 2px 8px rgba(57, 54, 3, 0.749);
+}
+
+body.lidar{
+    background-image: url(backdrop-lidar.png);
+    color: white;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.463);
+}
+
+body.red{
+    background-image: url(backdrop-red.png);
+    color: rgb(255, 255, 87);
+    text-shadow: 2px 2px 8px rgba(57, 54, 3, 0.749);
+}
+
+body.blue{
+    background-image: url(backdrop-blue.png);
+    color: white;
+
+}
 /*popups*/
+div.hidden{
+    opacity: 0%;
+    transition: 1s;
+}
+
+div.visible{
+    opacity: 100%;
+    transition: 1s;
+}
 
 div.hide{
-display: none;
+    display: none;
 }
 
 div.popup-fomo{
@@ -230,6 +335,7 @@ div.popup-fomo{
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
+    z-index: 3000;
 }
 
 div.popup-bartop{
@@ -251,32 +357,10 @@ div.popup-goodsum{
 
 }
 
-div.neural-networks-topl{
+div.hacker-data{
     position: fixed;
-    width: 25%;
-    top: 0;
-    left: 0;
-}
-
-div.neural-networks-topr{
-    position: fixed;
-    width: 25%;
-    top: 0;
-    right: 0;
-}
-
-div.neural-networks-bottoml{
-    position: fixed;
-    width: 25%;
-    bottom: 0;
-    left: 0;
-}
-
-div.neural-networks-bottomr{
-    position: fixed;
-    width: 25%;
-    bottom: 0;
-    right: 0;
+    width: 100%;
+    opacity: 50%;
 }
 
 div.cat-1{
@@ -396,4 +480,103 @@ div.shadow-sites-text{
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
+}
+
+div.pyramid{
+    position: fixed;
+    width: 80%;
+    bottom: 0;
+    right: -20%;
+}
+
+div.jungle-city{
+    position: fixed;
+    width: 70%;
+    bottom: 0;
+    right: -15%;
+}
+
+div.input-ag-right{
+    position: fixed;
+    width: 50%;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+div.map-og{
+    position: fixed;
+    width: 35%;
+    bottom: -5%;
+    right: 10%;
+    rotate: -20deg;
+}
+
+div.map-grid{
+    position: fixed;
+    width: 35%;
+    bottom: -5%;
+    right: 10%;
+    rotate: -20deg;
+}
+
+div.text-one{
+    position: fixed;
+    width: 40%;
+    bottom:5%;
+    left: 5%;
+}
+
+div.text-two{
+    position: fixed;
+    width: 40%;
+    bottom:5%;
+    left: 5%;
+}
+
+div.text-three{
+    position: fixed;
+    width: 40%;
+    bottom:5%;
+    left: 5%;
+}
+
+div.pink-gate{
+    position: fixed;
+    width: 55%;
+    bottom:0;
+    right: 0;
+}
+
+div.bubbles{
+    position: fixed;
+    width: 100%;
+    opacity: 70%;
+}
+
+div.map-of-future{
+    position: fixed;
+    width: 50%;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+/* footer*/
+div.footer{
+    width: 100%;
+    height: 10vh;
+    color: rgba(255, 255, 255, 0);
+
+}
+/* body text narration */
+
+div.bodytext div{
+    opacity:0%;
+    transition: 1s;
+}
+
+div.bodytext div.highlight{
+    opacity: 100%;
+    transition: 1s;
 }
