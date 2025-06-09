@@ -171,7 +171,6 @@ const classChanges = [
   { time: 448, target: ".blank-backdrop", remove: "hide" },
   { time: 448, target: ".text-one", remove: "hidden"},
   { time: 452, target: ".text-one", add: "hidden"},
-  { time: 452, target: ".page", remove: "dark" },
   { time: 452, target: ".map-og", remove: "hidden"},
   { time: 452, target: ".text-two", remove: "hidden"},
   { time: 458, target: ".map-og", add: "hidden"},
